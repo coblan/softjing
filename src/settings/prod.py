@@ -9,9 +9,9 @@ DATABASES = {
      'default': {
         'NAME': 'softjing',
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'root',
-        'PASSWORD': 'root123456789',
-        'HOST': '127.0.0.1', 
+        'USER': 'zhou',
+        'PASSWORD': 'zhou570508',
+        'HOST': '172.18.215.159', 
         'PORT': '3306', 
         'OPTIONS': {'charset':'utf8mb4'},
 

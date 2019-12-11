@@ -29,7 +29,7 @@ urlpatterns = [
     url(r'^web/([\w\.]+)/?$',PcWebMenu.as_view(),name=PcWebMenu.url_name),
     url(r'^d/',include('helpers.director.urls'),name='director'),
     url(r'^dapi/(?P<director_name>[\w\/\.]+)?/?$',director_view),
-    url(r'^$',RedirectView.as_view(url='/pc/admin_article')) ,
+    url(r'^$',RedirectView.as_view(url='/web/home')) ,
 ]
 
 if settings.DEBUG:

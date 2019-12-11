@@ -49,6 +49,7 @@ class PcWebMenu(BaseEngine):
             {'label': '首页', 'url': page('home'), 'visible': True},
             {'label': '文章','url':page('articlelist'), 'visible': True},
             {'label': '示例','url':page('example'), 'visible': True},
+            {'label':'后台管理','url':'/pc/admin_article','visible':True},
         ]
 
         return menu

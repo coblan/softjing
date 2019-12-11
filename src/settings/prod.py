@@ -17,3 +17,5 @@ DATABASES = {
 
       },
 } 
+
+ALLOWED_HOSTS=['www.softjing.com']

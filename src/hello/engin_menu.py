@@ -48,7 +48,7 @@ class PcWebMenu(BaseEngine):
         
             {'label': '首页', 'url': page('home'), 'visible': True},
             {'label': '文章','url':page('articlelist'), 'visible': True},
-            {'label': '代理管理2','url':page('proxy'), 'visible': True},
+            {'label': '示例','url':page('example'), 'visible': True},
         ]
 
         return menu

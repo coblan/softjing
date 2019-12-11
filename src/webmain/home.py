@@ -15,7 +15,8 @@ class SoftJingHome(object):
                     {'name':'3','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/OverwinteringMonarchs_ZH-CN0248511586_1920x1080.jpg'},
                     {'name':'4','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/HairyHighlanders_ZH-CN5546635143_1920x1080.jpg'},
                 ]},
-                {'editor':'com-top-block-ctn','title':'测试标题','items':[
+                {'editor':'com-top-block-ctn','title':'当前状态','sub_title':'网站正在开发中',
+                 'items':[
                     {'editor':'com-ti-caption','class':'wow zoomIn',
                      'image_url':'http://h1.ioliu.cn/bing/PuffinSharing_ZH-CN6330890743_1920x1080.jpg','title':'xxx','sub_title':'bbb'},
                     {'editor':'com-ti-caption','class':'wow zoomIn',

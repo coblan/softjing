@@ -4,3 +4,4 @@ from django.contrib import admin
 from . import home
 from . pages import article
 from . import admin_article
+from . pages import example

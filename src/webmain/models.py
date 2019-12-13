@@ -13,3 +13,10 @@ class Article(models.Model):
     content = RichtextField('内容')
     cover = PictureField('封面',max_length=300,blank=True)
     status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
+    
+
+class Banner(models.Model):
+    title = models.CharField('标题',max_length=500)
+    cover = PictureField('封面',max_length=300)
+    status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
+    #order = models.IntegerField(verbose_name='排序',default=9999)

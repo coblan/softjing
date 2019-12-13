@@ -25,6 +25,7 @@ class PcAdminMenu(BaseEngine):
         menu = [
         
             {'label': '文章管理', 'url': page('admin_article'), 'visible': True},
+            {'label':'首页广告图','url':page('banner'),'visible':True}
         ]
 
         return menu

@@ -62,7 +62,10 @@ class PcWebMenu(BaseEngine):
             },
             'footer':{
                 'editor':'com-ft-copyright','copyright':'@copyright 2019 jingjia Infomaion Technology Co'
-            }
+            },
+            'customize_meta':'''<meta name="keywords" content="互联网 软件 管理后台 公众号" />
+<meta name="description" content="竞嘉信息技术有限公司">
+<meta name="author" content="竞嘉信息技术有限公司">'''
         })
         return ctx
 

@@ -7,6 +7,9 @@ class SoftJingHome(object):
     def get_template(self):
         return 'pcweb/pcweb.html'
     
+    def get_label(self):
+        return '竞嘉'
+    
     def get_context(self):
         banners = []
         for banner in Banner.objects.all():

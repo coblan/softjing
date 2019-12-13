@@ -36,7 +36,7 @@ class SoftJingHome(object):
                     {'editor':'com-ti-caption','class':'wow zoomIn',
                      'image_url':'http://h1.ioliu.cn/bing/PuffinSharing_ZH-CN6330890743_1920x1080.jpg','title':'xxx','sub_title':'bbb'},
                     {'editor':'com-ti-caption','class':'wow zoomIn',
-                     'image_url':'http://h1.ioliu.cn/bing/StubenamAlberg_EN-AU7684816211_1920x1080.jpg','title':'xxx','sub_title':'bbb'},
+                     'image_url':'http://h1.ioliu.cn/bing/RhinosOxpecker_ZH-CN6392794613_1920x1080.jpg','title':'xxx','sub_title':'犀牛'},
                    
                     ]},
                 {'editor':'com-top-transparent-ctn','image_url':'http://h1.ioliu.cn/bing/NambungPinnacles_ZH-CN7198283991_1920x1080.jpg'}, #'image_url':'http://h1.ioliu.cn/bing/BlueChip_ZH-CN7376022522_1920x1080.jpg'},

@@ -42,7 +42,9 @@ class SoftJingHome(object):
                      'image_url':'http://h1.ioliu.cn/bing/RhinosOxpecker_ZH-CN6392794613_1920x1080.jpg','title':'xxx','sub_title':'犀牛'},
                    
                     ]},
-                {'editor':'com-top-transparent-ctn','image_url':'http://h1.ioliu.cn/bing/NambungPinnacles_ZH-CN7198283991_1920x1080.jpg'}, #'image_url':'http://h1.ioliu.cn/bing/BlueChip_ZH-CN7376022522_1920x1080.jpg'},
+                {'editor':'com-top-transparent-ctn','image_url':'http://h1.ioliu.cn/bing/NambungPinnacles_ZH-CN7198283991_1920x1080.jpg',
+                 'title':'大千世界,近在眼前',
+                 'subtitle':'互联网技术带来了第四次工业革命，带来了空前的变革,搭上这趟快车，您将拥有无限可能!'}, #'image_url':'http://h1.ioliu.cn/bing/BlueChip_ZH-CN7376022522_1920x1080.jpg'},
                 
                 {'editor':'com-top-block-ctn','title':'测试','items':[
                     {'editor':'com-ti-caption2','class':'wow zoomIn',

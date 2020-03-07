@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
-from hello.engin_menu import PcWebMenu,PcAdminMenu
+from hello.engin_menu import PcWebMenu,PcAdminMenu,MBpageEngine
 from django.conf.urls.static import static
 from helpers.director.views import director_view
 from django.conf import settings
@@ -27,6 +27,9 @@ urlpatterns = [
     url(r'^accounts/([\w\.]+)/?$',AuthEngine.as_view(),name=AuthEngine.url_name),
     url(r'^pc/([\w\.]+)/?$',PcAdminMenu.as_view(),name=PcAdminMenu.url_name),
     url(r'^web/([\w\.]+)/?$',PcWebMenu.as_view(),name=PcWebMenu.url_name),
+    
+    url(r'^mb/([\w\.]+)/?$',MBpageEngine.as_view(),name=MBpageEngine.url_name),
+    
     url(r'^d/',include('helpers.director.urls'),name='director'),
     url(r'^dapi/(?P<director_name>[\w\/\.]+)?/?$',director_view),
     url(r'^$',RedirectView.as_view(url='/web/home')) ,

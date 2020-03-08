@@ -18,4 +18,4 @@ DATABASES = {
       },
 } 
 
-ALLOWED_HOSTS=['www.softjing.com']
+ALLOWED_HOSTS=['www.softjing.com','softjing.com']

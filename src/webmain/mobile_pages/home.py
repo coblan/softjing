@@ -1,5 +1,6 @@
 from hello.engin_menu import mb_page
 from django.conf import settings
+from helpers.director.kv import get_value
 
 class Home(object):
     def __init__(self, request, engin):
@@ -13,7 +14,8 @@ class Home(object):
             'editor':'live_layout',
              'editor_ctx':{
                  'layout_editors':[
-                    {'editor':'com-top-home-brand','username':self.request.user.username},
+                     
+                    {'editor':'com-top-html','html':get_value('cfg.home_html','')},
                     ]
                  }
              }

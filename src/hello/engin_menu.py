@@ -26,7 +26,8 @@ class PcAdminMenu(BaseEngine):
         menu = [
         
             {'label': '文章管理', 'url': page('admin_article'), 'visible': True},
-            {'label':'首页广告图','url':page('banner'),'visible':True}
+            {'label':'首页广告图','url':page('banner'),'visible':True},
+            {'label':'设置','url':page('cfgpage')},
         ]
 
         return menu
@@ -80,26 +81,26 @@ inspect_dict['mb_page']= mb_page
 
 class MBpageEngine(BaseEngine):
     url_name='mb_page'
-    need_login=True
     access_from_internet=True
-    login_url='/mb/login'
+    need_login=False
+    #login_url='/mb/login'
     menu=[
-        {'label':'user_info','url':page('user_buyrecord')},
-          {'label':'user_washrecord','url':page('user_washrecord')},
-          {'label':'user_info','url':page('user_info')},
+        #{'label':'user_info','url':page('user_buyrecord')},
+        #{'label':'user_washrecord','url':page('user_washrecord')},
+        #{'label':'user_info','url':page('user_info')},
           
           ]
-    def custome_ctx(self, ctx):
-        if 'extra_js' not in ctx:
-            ctx['extra_js'] = []
-        if 'job' not in ctx['extra_js']:
-            ctx['extra_js'].append('job')
-        ctx['extra_js'].append('moment')
-        ctx['extra_js'].append('moment_zh_cn')
+    #def custome_ctx(self, ctx):
+        #if 'extra_js' not in ctx:
+            #ctx['extra_js'] = []
+        #if 'job' not in ctx['extra_js']:
+            #ctx['extra_js'].append('job')
+        #ctx['extra_js'].append('moment')
+        #ctx['extra_js'].append('moment_zh_cn')
         
         
         #ctx['extra_js'].append('moment')
-        return ctx
+        #return ctx
 
 MBpageEngine.add_pages(mb_page)
 

@@ -16,7 +16,7 @@ class Article(models.Model):
     
 
 class Banner(models.Model):
-    title = models.CharField('标题',max_length=500)
+    title = models.CharField('标题',max_length=500,blank=True)
     cover = PictureField('封面',max_length=300)
     status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
     #order = models.IntegerField(verbose_name='排序',default=9999)

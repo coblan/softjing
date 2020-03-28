@@ -19,3 +19,5 @@ DATABASES = {
 } 
 
 ALLOWED_HOSTS=['www.softjing.com','softjing.com']
+
+STATIC_URL='https://cdn.jsdelivr.net/gh/coblan/softjing/src/static/'

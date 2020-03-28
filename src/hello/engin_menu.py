@@ -25,9 +25,12 @@ class PcAdminMenu(BaseEngine):
         crt_user = self.request.user
         menu = [
         
-            {'label': '文章管理', 'url': page('admin_article'), 'visible': True},
-            {'label':'首页广告图','url':page('banner'),'visible':True},
-            {'label':'设置','url':page('cfgpage')},
+            {'label':'内容管理','icon': fa('fa-truck'),'submenu':[
+                 {'label': '文章管理', 'url': page('admin_article'), },
+                 {'label':'首页广告图','url':page('banner'),},
+            ]},
+           
+            {'label':'设置','url':page('cfgpage'),'icon': fa('fa-truck'),},
         ]
 
         return menu
@@ -50,9 +53,9 @@ class PcWebMenu(BaseEngine):
         menu = [
         
             {'label': '首页', 'url': page('home'), 'visible': True},
-            {'label': '文章','url':page('articlelist'), 'visible': True},
-            {'label': '示例','url':page('example'), 'visible': True},
-            {'label':'后台管理','url':'/pc/admin_article','visible':True},
+            {'label': '文章','url':page('articlelist'),'icon': fa('fa-truck'), 'visible': True},
+            {'label': '示例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            {'label':'后台管理','url':'/pc/admin_article','icon': fa('fa-truck'),'visible':True},
         ]
 
         return menu

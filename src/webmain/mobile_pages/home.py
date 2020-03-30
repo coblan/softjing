@@ -24,7 +24,7 @@ class Home(object):
             'editor':'live_layout',
              'editor_ctx':{
                  'layout_editors':[
-                     {'editor':'com-top-swiper','items':banners},
+                     {'editor':'com-top-swiper','items':banners,'class':'my-banner'},
                      {'editor':'com-top-caption',
                       'image_url':static_url('mobile/python.jpg'),
                       'class':'white-bg material-wave',

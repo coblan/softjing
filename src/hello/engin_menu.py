@@ -66,7 +66,16 @@ class PcWebMenu(BaseEngine):
                 'editor':'com-xiu-menu',
             },
             'footer':{
-                'editor':'com-ft-copyright','copyright':'@copyright 2019 jingjia Infomaion Technology Co'
+                #'editor':'com-ft-copyright','copyright':''
+                'class':'myfooter',
+                'css':'.myfooter{background-color:white;padding:20px;} .myfooter a{text-decoration: none;}',
+                'editor':'com-top-html','html':'''
+                <div style="text-align:center;">
+                  <div>@copyright 2019 SoftJing Infomaion Technology Co</div>
+                  <div><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">蜀ICP备19023278号-1</a></div>
+                </div>
+              
+                '''
             },
             'customize_meta':'''<meta name="keywords" content="互联网 软件 管理后台 公众号" />
 <meta name="description" content="竞嘉信息技术有限公司">

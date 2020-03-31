@@ -20,4 +20,10 @@ DATABASES = {
 
 ALLOWED_HOSTS=['www.softjing.com','softjing.com']
 
-STATIC_URL='https://cdn.jsdelivr.net/gh/coblan/softjing/src/static/'
+import os
+try:
+    with open(os.path.join( os.path.dirname( BASE_DIR ),'git_hash'),'r') as f:
+        version = f.read()
+        STATIC_URL='https://cdn.jsdelivr.net/gh/coblan@%s/softjing/src/static/'%version
+except Exception:
+    pass

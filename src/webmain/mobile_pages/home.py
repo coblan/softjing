@@ -18,6 +18,7 @@ class Home(object):
                 'name':banner.pk,
                 'label':banner.title,
                 'image_url':banner.cover,
+                'action':'''live_root.open_live("live_html",{content:"<div style='height:800px'>hello world</div>"})'''
             })
             
         return {
@@ -34,7 +35,6 @@ class Home(object):
                      {'editor':'com-top-caption',
                       'image_url':static_url('mobile/v2_q7sorp.jpg'),
                       'class':'white-bg material-wave',
-                      #'css':'.black-bg{background-color:black;color:white;margin:.2rem 0}',
                       'title':'公司理念',
                       'location':'right',
                       'sub_title':'任何功能可追踪至一线开发人员，快速解决问题，不做营销型公司。'},
@@ -47,9 +47,20 @@ class Home(object):
                      
                     #{'editor':'com-top-html','html':get_value('cfg.home_html','')},
                     
-                    ]
+                    ],
+                 'footer':self.get_footer(0)
                  }
              }
+    def get_footer(self,index):
+        return {
+            'editor':'com-top-footer-btn-pannel',
+            'active':index,
+            'items':[
+                {'label':'首页','icon':'home-o','action':'location = "/mb/home" '},
+                {'label':'示例','icon':'gem-o','action':'location = "/mb/example"'},
+                {'label':'方案','icon':'description','action':'location = "/mb/article"'}
+            ]
+        }
 
 mb_page.update({
     'home':Home

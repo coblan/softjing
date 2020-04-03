@@ -2,7 +2,7 @@ from .home import Home
 from hello.engin_menu import mb_page
 from helpers.mobile.shortcut import ModelTableMobile
 from helpers.director.shortcut import director
-from helpers.func.html import truncatehtml
+from helpers.func.html import truncatehtml,textify
 from webmain.models import Article
 
 class ArticlePage(Home):
@@ -36,7 +36,7 @@ class ArticleTable(ModelTableMobile):
     def dict_row(self, inst):
         return {
             'image_url':inst.cover,
-            'sub_title':truncatehtml(inst.content,length=30),
+            'sub_title': textify ( truncatehtml(inst.content,length=30) ),
         }
 
 director.update({

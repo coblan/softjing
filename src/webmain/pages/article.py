@@ -41,7 +41,7 @@ class ArticleList(ModelTable):
     
     def dict_row(self, inst):
         return {
-            'sub_title': textify(  truncatehtml( inst.content,120 ) )
+            'sub_title': textify(  truncatehtml( inst.content,100 ) )
         }
 
 class ArticlePage(FieldsPage):

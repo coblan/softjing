@@ -1,6 +1,7 @@
 from helpers.pcweb.shotcut import web_page_dc
 from helpers.director.shortcut import ModelFields,FieldsPage,ModelTable,director_element
 from ..models import Article
+from helpers.func.html import textify,truncatehtml
 
 def get_right_side_panel():
     ls = [
@@ -21,7 +22,11 @@ class ArticleListPage(object):
             'tops':[
                 {'editor':'com-top-lay-main-small',
                  'main_items':[
-                    {'editor':'com-ti-list','director_name':'article.list','item_editor':'com-li-article','action':'location="article?pk="+scope.row.pk'}
+                    {
+                    'editor':'com-ti-list',
+                     'director_name':'article.list',
+                     'item_editor':'com-li-article',
+                     'action':'location="article?pk="+scope.row.pk'}
                     ],
                  'small_items':get_right_side_panel()},
             ]
@@ -33,7 +38,11 @@ class ArticleList(ModelTable):
     model = Article
     exclude =[]
     simple_dict = True
-
+    
+    def dict_row(self, inst):
+        return {
+            'sub_title': textify(  truncatehtml( inst.content,30 ) )
+        }
 
 class ArticlePage(FieldsPage):
     def get_template(self):

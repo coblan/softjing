@@ -23,8 +23,14 @@ class ExamplePage(Home):
                       'class':'white-bg material-wave',
                       'css':'.white-bg{background-color:white;margin:.4rem 0}',
                       'title':'易职通',
-                      'action':'cfg.confirm("确定跳转到【样例】易职通?").then(()=>{ location="http://job.softjing.com" })',
+                      'action':'cfg.confirm("确定跳转到[易职通]?").then(()=>{ location="http://job.softjing.com" })',
                       'sub_title':'一个面向本地的求职平台，比大平台更加贴近普通大众。账号:admin;密码:admin'},
+                    
+                    {'editor':'com-top-caption',
+                     'image_url':static_url('image/dish.jfif'),
+                     'title':'餐馆点菜',
+                     'sub_title':'一个面向餐馆本地点餐',
+                     'action':'cfg.confirm("确定跳转到[餐馆点菜]?").then(()=>{ location="http://dish.softjing.com/mb/home"})'},
                     
                      {'editor':'com-top-html','html':'<h2 style="text-align:center;margin:.4rem 0 .2rem 0">PC端</h2>'},
                      {'editor':'com-top-caption',

@@ -3,7 +3,7 @@ from helpers.director.shortcut import page_dc
 from helpers.director.engine import BaseEngine, page, fa, can_list, can_touch
 from django.contrib.auth.models import User, Group
 from helpers.func.collection.container import evalue_container
-from helpers.maintenance.update_static_timestamp import js_stamp
+from helpers.maintenance.update_static_timestamp import js_stamp,static_url
 from django.utils.translation import ugettext as _
 from django.conf import settings
 from helpers.director.access.permit import has_permit
@@ -42,7 +42,7 @@ PcAdminMenu.add_pages(page_dc)
 class PcWebMenu(BaseEngine):
     url_name = 'SoftJing'
     title = 'SoftJing'
-    brand = 'SoftJing'
+    brand = '''  <img src="%s" onclick="location='/'" style="height:60px;width:auto"> ''' %static_url('image/logo.png')
     mini_brand = 'SoftJing'
     need_staff=False
     need_login=False

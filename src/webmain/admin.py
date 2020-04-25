@@ -1,11 +1,12 @@
 from django.contrib import admin
-
+from . import js_cfg
 # Register your models here.
 from . import home
 from . pages import article
 from . import admin_article
 from . import admin_banner
 from . import admin_cfg
+from . import admin_exampleinfo
 
 from . pages import example
 

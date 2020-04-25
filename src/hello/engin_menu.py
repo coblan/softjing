@@ -28,6 +28,7 @@ class PcAdminMenu(BaseEngine):
             {'label':'内容管理','icon': fa('fa-truck'),'submenu':[
                  {'label': '文章管理', 'url': page('admin_article'), },
                  {'label':'首页广告图','url':page('banner'),},
+                 {'label':'示例管理','url':page('example')}
             ]},
            
             {'label':'设置','url':page('cfgpage'),'icon': fa('fa-truck'),},
@@ -42,7 +43,7 @@ PcAdminMenu.add_pages(page_dc)
 class PcWebMenu(BaseEngine):
     url_name = 'SoftJing'
     title = 'SoftJing'
-    brand = '''  <img src="%s" onclick="location='/'" style="height:60px;width:auto"> ''' %static_url('image/logo.png')
+    brand = 'SoftJing'  #'''  <img src="%s" onclick="location='/'" style="height:60px;width:auto"> ''' %static_url('image/logo.png')
     mini_brand = 'SoftJing'
     need_staff=False
     need_login=False
@@ -62,6 +63,7 @@ class PcWebMenu(BaseEngine):
     
     def custome_ctx(self, ctx):
         ctx.update({
+            'extra_js':['webmain'],
             'navibar':{
                 'editor':'com-xiu-menu',
             },

@@ -1,5 +1,7 @@
 from helpers.pcweb.shotcut import web_page_dc
 from helpers.maintenance.update_static_timestamp import static_url
+from helpers.director.shortcut import ModelTable,director
+from webmain.models import ExampleInfo
 
 class ExamplePage(object):
     def __init__(self, request, engin):
@@ -18,11 +20,15 @@ class ExamplePage(object):
                  'inn_ctx':{
                      'tabs':[
                          {'label':'管理后台','icon':static_url('image/系统.png'),'icon_active':static_url('image/系统_active.png'),
-                          'editor':'com-ti-list',
-                          'director_name':'article.list',
-                          'item_editor':'com-li-article',
-                          'action':'location="article?pk="+scope.row.pk'},
-                         {'label':'移动应用','icon':static_url('image/移动端.png'),'icon_active':static_url('image/移动端_active.png')},
+                          'editor':'com-example-info',
+                          'director_name':'example-list',
+                          'preset':'rt={kind:1}',
+                          },
+                         {'label':'移动应用',
+                          'icon':static_url('image/移动端.png'),'icon_active':static_url('image/移动端_active.png'),
+                          'editor':'com-example-info',
+                          'director_name':'example-list',
+                           'preset':'rt={kind:2}',},
                          {'label':'数据分析','icon':static_url('image/数据.png'),'icon_active':static_url('image/数据_active.png')},
                      ]
                  }
@@ -42,6 +48,18 @@ class ExamplePage(object):
             ]
         }
 
+
+class ExampleInfoList(ModelTable):
+    model = ExampleInfo
+    exclude = []
+    
+    def inn_filter(self, query):
+        return query.filter(kind=self.kw.get('kind'))
+
+director.update({
+    'example-list':ExampleInfoList
+})
+    
 web_page_dc.update({
     'example':ExamplePage,
 })

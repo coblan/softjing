@@ -20,3 +20,15 @@ class Banner(models.Model):
     cover = PictureField('封面',max_length=300)
     status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
     #order = models.IntegerField(verbose_name='排序',default=9999)
+
+EXAMPLE_KIND= (
+    (1,'管理系统'),
+    (2,'移动端'),
+)
+
+class ExampleInfo(models.Model):
+    title = models.CharField('标题',max_length=500)
+    content = RichtextField('内容')
+    cover = PictureField('封面',max_length=300,blank=True)
+    status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
+    kind = models.IntegerField(verbose_name='类别',default=0,choices= EXAMPLE_KIND)

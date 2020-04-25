@@ -31,7 +31,7 @@ urlpatterns = [
     url(r'^mb/([\w\.]+)/?$',MBpageEngine.as_view(),name=MBpageEngine.url_name),
     
     url(r'^d/',include('helpers.director.urls'),name='director'),
-    url(r'^dapi/(?P<director_name>[\w\/\.]+)?/?$',director_view),
+    url(r'^dapi/(?P<director_name>[\w\/\.-]+)?/?$',director_view),
     url(r'^$',RedirectView.as_view(url='/web/home')) ,
 ]
 

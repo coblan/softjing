@@ -22,8 +22,8 @@ class Banner(models.Model):
     #order = models.IntegerField(verbose_name='排序',default=9999)
 
 EXAMPLE_KIND= (
-    (1,'管理系统'),
-    (2,'移动端'),
+    (1,'综合系统'),
+    (2,'管理系统'),
 )
 
 class ExampleInfo(models.Model):

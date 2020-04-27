@@ -46,10 +46,9 @@
         width: 640px;
         height: 330px;
         background-size: cover;
-        margin: auto;
+        margin: 30px auto;
     }
     .content{
-        margin-top:30px;
         color: #5c5c5c;
     }
 </style>

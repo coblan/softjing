@@ -11,6 +11,8 @@ class ExampleInfoPage(TablePage):
     class tableCls(ModelTable):
         model = ExampleInfo
         exclude =[]
+        pop_edit_fields=['id']
+        
 
 class ExampleForm(ModelFields):
     class Meta:

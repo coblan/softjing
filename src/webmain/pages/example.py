@@ -19,12 +19,17 @@ class ExamplePage(object):
                  'inn_editor':'com-ctn-tab',
                  'inn_ctx':{
                      'tabs':[
-                         {'label':'管理后台','icon':static_url('image/系统.png'),'icon_active':static_url('image/系统_active.png'),
+                         {'label':'综合系统','icon':static_url('image/综合数据.png'),'icon_active':static_url('image/综合数据_active.png'),
                           'editor':'com-example-info',
                           'director_name':'example-list',
                           'preset':'rt={kind:1}',
                           },
-                         {'label':'移动应用',
+                         {'label':'管理系统',
+                          'icon':static_url('image/系统.png'),'icon_active':static_url('image/系统_active.png'),
+                          'editor':'com-example-info',
+                          'director_name':'example-list',
+                           'preset':'rt={kind:2}',},
+                        {'label':'移动系统',
                           'icon':static_url('image/移动端.png'),'icon_active':static_url('image/移动端_active.png'),
                           'editor':'com-example-info',
                           'director_name':'example-list',
@@ -52,7 +57,7 @@ class ExamplePage(object):
 class ExampleInfoList(ModelTable):
     model = ExampleInfo
     exclude = []
-    
+    nolimit = True
     def inn_filter(self, query):
         return query.filter(kind=self.kw.get('kind'))
 

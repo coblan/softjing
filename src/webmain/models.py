@@ -24,6 +24,8 @@ class Banner(models.Model):
 EXAMPLE_KIND= (
     (1,'综合系统'),
     (2,'管理系统'),
+    (3,'移动系统'),
+    (4,'数据分析'),
 )
 
 class ExampleInfo(models.Model):

@@ -33,7 +33,7 @@ class ExamplePage(object):
                           'icon':static_url('image/移动端.png'),'icon_active':static_url('image/移动端_active.png'),
                           'editor':'com-example-info',
                           'director_name':'example-list',
-                           'preset':'rt={kind:2}',},
+                           'preset':'rt={kind:3}',},
                          {'label':'数据分析','icon':static_url('image/数据.png'),'icon_active':static_url('image/数据_active.png')},
                      ]
                  }

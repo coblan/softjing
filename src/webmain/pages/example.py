@@ -13,9 +13,10 @@ class ExamplePage(object):
         return {
             'tops':[
                 {'editor':'com-top-image-top-pad',
+                 'full_width':True,
                  'image_url':static_url('image/server-2160321_1280.webp'),
                  'class':'my-top-image',
-                 'css':'.my-top-image .head{height:320px}.my-top-image .head img{height:370px}',
+                 'css':'.my-top-image .head{height:180px}.my-top-image .head img{height:370px}',
                  'inn_editor':'com-ctn-tab',
                  'inn_ctx':{
                      'tabs':[

@@ -37,16 +37,16 @@
 </script>
 <style scoped lang="scss">
 .com-example-info{
-    padding: 40px 20px;
+    padding: 40px
 }
 .row{
     margin-bottom: 60px;
 }
     .cover{
-        width: 640px;
-        height: 330px;
+        width: 800px;
+        height: 400px;
         background-size: cover;
-        margin: 30px auto;
+        margin: 40px auto;
     }
     .content{
         color: #5c5c5c;

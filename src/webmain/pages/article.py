@@ -20,11 +20,17 @@ class ArticleListPage(object):
     def get_context(self):
         return {
             'tops':[
+                {'editor':'com-top-action-bar','actions':[
+                    {'label':'全部','action':'rootParStore.$emit("change-kind",{})'},
+                    {'label':'管理系统','action':'rootParStore.$emit("change-kind",{kind:1})'},
+                    {'label':'算法','action':'rootParStore.$emit("change-kind",{kind:2})'}
+                    ]},
                 {'editor':'com-top-lay-main-small',
                  'main_items':[
                     {
                     'editor':'com-ti-list',
                      'director_name':'article.list',
+                     'on_mounted':'rootParStore.$on("change-kind",(event)=>{scope.vc.ctx.preset=event;scope.vc.get_rows()})',
                      'item_editor':'com-li-article',
                      'action':'location="article?pk="+scope.row.pk'}
                     ],
@@ -38,6 +44,12 @@ class ArticleList(ModelTable):
     model = Article
     exclude =[]
     simple_dict = True
+    
+    def inn_filter(self, query):
+        if self.kw.get('kind'):
+            return query.filter(kind = self.kw.get('kind'))
+        else:
+            return query
     
     def dict_row(self, inst):
         return {

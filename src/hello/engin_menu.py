@@ -43,7 +43,7 @@ PcAdminMenu.add_pages(page_dc)
 class PcWebMenu(BaseEngine):
     url_name = 'SoftJing'
     title = 'SoftJing'
-    brand = 'SoftJing'  #'''  <img src="%s" onclick="location='/'" style="height:60px;width:auto"> ''' %static_url('image/logo.png')
+    brand = '''  <img src="%s" onclick="location='/'" style="height:60px;width:auto"> ''' %static_url('image/logo.png') #'SoftJing'  #
     mini_brand = 'SoftJing'
     need_staff=False
     need_login=False

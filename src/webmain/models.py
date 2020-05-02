@@ -8,11 +8,18 @@ ARTICLE_STATUS=(
     (1,'在线'),
 )
 
+ARTICLE_KIND = (
+    (0,'不分类'),
+    (1,'管理系统'),
+    (2,'算法类'),
+)
+
 class Article(models.Model):
     title = models.CharField('标题',max_length=500)
     content = RichtextField('内容')
     cover = PictureField('封面',max_length=300,blank=True)
     status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
+    kind = models.IntegerField(verbose_name='类别',default=0,choices=ARTICLE_KIND)
     
 
 class Banner(models.Model):

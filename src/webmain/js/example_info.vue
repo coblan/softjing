@@ -37,7 +37,7 @@
 </script>
 <style scoped lang="scss">
 .com-example-info{
-    padding: 40px
+    padding: 40px;
 }
 .row{
     margin-bottom: 60px;

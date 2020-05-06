@@ -1,5 +1,5 @@
 from helpers.pcweb.shotcut import web_page_dc
-from .models import Banner
+from webmain.models import Banner
 from helpers.maintenance.update_static_timestamp import static_url
 
 class SoftJingHome(object):
@@ -31,39 +31,42 @@ class SoftJingHome(object):
                     #{'name':'4','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/HairyHighlanders_ZH-CN5546635143_1920x1080.jpg'},
                 #]
                  },
-                {'editor':'com-top-block-ctn','title':'我们的服务','sub_title':'灵活多变,以人为本。',
-                 'items':[
-                    {'editor':'com-ti-caption','class':'wow zoomIn dh-1','css':'.dh-1{height:380px}',
-                     'image_url':static_url('image/admin_sys2.jpg'),
-                     'title':'管理系统','sub_title':'契合业务的管理系统是您的秘密武器!'},
-                    {'editor':'com-ti-caption','class':'wow zoomIn dh-1',
-                     'image_url':static_url('image/admin_sys2.jpg'),
-                     'title':'公众号',
-                     'sub_title':'移动互联网时代'},
-                    {'editor':'com-ti-caption','class':'wow zoomIn dh-1',
-                     'image_url':static_url('image/admin_sys2.jpg'),
-                     'title':'开发中','sub_title':'开发中'},
-                    {'editor':'com-ti-caption','class':'wow zoomIn dh-1',
-                     'image_url':static_url('image/admin_sys2.jpg'),
-                     'title':'开发中','sub_title':'犀牛'},
+                {'editor':'cus-our-service'},
+                
+                #{'editor':'com-top-block-ctn','title':'我们的服务','sub_title':'灵活多变,以人为本。',
+                 #'items':[
+                    #{'editor':'com-ti-caption','class':'wow zoomIn dh-1','css':'.dh-1{height:380px}',
+                     #'image_url':static_url('image/admin_sys2.jpg'),
+                     #'title':'管理系统','sub_title':'契合业务的管理系统是您的秘密武器!'},
+                    #{'editor':'com-ti-caption','class':'wow zoomIn dh-1',
+                     #'image_url':static_url('image/admin_sys2.jpg'),
+                     #'title':'公众号',
+                     #'sub_title':'移动互联网时代'},
+                    #{'editor':'com-ti-caption','class':'wow zoomIn dh-1',
+                     #'image_url':static_url('image/admin_sys2.jpg'),
+                     #'title':'开发中','sub_title':'开发中'},
+                    #{'editor':'com-ti-caption','class':'wow zoomIn dh-1',
+                     #'image_url':static_url('image/admin_sys2.jpg'),
+                     #'title':'开发中','sub_title':'犀牛'},
                    
-                    ]},
+                    #]},
                 {'editor':'com-top-transparent-ctn',
                  'image_url':static_url('image/desert-4791919_1280.jpg'),
                  'title':'大千世界,近在眼前',
                  'subtitle':'互联网技术带来了第四次工业革命，带来了空前的变革,搭上这趟快车，您将拥有无限可能!'}, #'image_url':'http://h1.ioliu.cn/bing/BlueChip_ZH-CN7376022522_1920x1080.jpg'},
                 
-                {'editor':'com-top-block-ctn','title':'测试','items':[
+                {'editor':'com-top-block-ctn','title':'我们的特点','items':[
                     {'editor':'com-ti-caption2','class':'wow zoomIn',
                      'image_url':static_url( 'image/admin_sys.jpg' ),
-                     'title':'xxx','sub_title':'集成电路'} ,
+                     'title':'新技术高效率','sub_title':'python+django+vuejs模块化开发，速度惊人'} ,
                     {'editor':'com-ti-caption2','class':'wow zoomIn',
-                     'image_url':static_url( 'image/admin_sys.jpg' ),
-                     'sub_title':'张家界国家森林公园'} ,
+                     'image_url':static_url( 'image/collective-3300872_640.png' ),
+                     'title':'模块化低成本',
+                     'sub_title':'模块化开发，人力成本降低，费用大幅减少'} ,
                     {'editor':'com-ti-caption2','class':'wow zoomIn',
-                     'image_url':static_url( 'image/admin_sys.jpg' ),
-                     'title':'xxx',
-                     'sub_title':'bbb'} ,
+                     'image_url':static_url( 'image/owl-50267_640.jpg' ),
+                     'title':'全站开发易维护',
+                     'sub_title':'全栈开发，程序统一而连贯，极大提高程序的可维护性。使得项目长期维护成为可能。灵活多变。'} ,
                 ]}
                 #{'editor':'com-slide-win','images':[
                     #{'url':'xxx'},

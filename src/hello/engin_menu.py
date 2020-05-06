@@ -54,8 +54,8 @@ class PcWebMenu(BaseEngine):
         menu = [
         
             {'label': '首页', 'url': page('home'), 'visible': True},
-            {'label': '资讯','url':page('articlelist'),'icon': fa('fa-truck'), 'visible': True},
-            {'label': '示例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            {'label': '最新文章','url':page('articlelist'),'icon': fa('fa-truck'), 'visible': True},
+            {'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
             {'label':'后台管理','url':'/pc/admin_article','icon': fa('fa-truck'),'visible':True},
         ]
 

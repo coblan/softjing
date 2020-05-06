@@ -57,8 +57,8 @@ class Home(object):
             'active':index,
             'items':[
                 {'label':'首页','icon':'home-o','action':'location = "/mb/home" '},
-                {'label':'示例','icon':'gem-o','action':'location = "/mb/example"'},
-                {'label':'资讯','icon':'description','action':'location = "/mb/article"'}
+                {'label':'最新文章','icon':'description','action':'location = "/mb/article"'},
+                {'label':'演示实例','icon':'gem-o','action':'location = "/mb/example"'},
             ]
         }
 

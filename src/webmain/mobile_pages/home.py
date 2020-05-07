@@ -26,6 +26,13 @@ class Home(object):
              'editor_ctx':{
                  'layout_editors':[
                      {'editor':'com-top-swiper','items':banners,},
+                     {'editor':'cus-mb-our-service'},
+                     
+                    {'editor':'com-top-transparent-ctn',
+                 'image_url':static_url('image/desert-4791919_1280.jpg'),
+                 'title':'大千世界,近在眼前',
+                 'subtitle':'互联网技术带来了第四次工业革命，带来了空前的变革,搭上这趟快车，您将拥有无限可能!'},
+                       
                      {'editor':'com-top-caption',
                       'image_url':static_url('mobile/python.jpg'),
                       'class':'white-bg material-wave',

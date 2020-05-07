@@ -104,7 +104,12 @@ class MBpageEngine(BaseEngine):
         #{'label':'user_info','url':page('user_info')},
           
           ]
-    #def custome_ctx(self, ctx):
+    
+        
+    def custome_ctx(self, ctx):
+        ctx.update({
+            'extra_js':['webmain'],
+        })
         #if 'extra_js' not in ctx:
             #ctx['extra_js'] = []
         #if 'job' not in ctx['extra_js']:
@@ -114,7 +119,7 @@ class MBpageEngine(BaseEngine):
         
         
         #ctx['extra_js'].append('moment')
-        #return ctx
+        return ctx
 
 MBpageEngine.add_pages(mb_page)
 

@@ -3,3 +3,5 @@ import our_service from  './our_service.vue'
 
 Vue.component('com-example-info',example_info)
 Vue.component('cus-our-service',our_service)
+
+import * as mb_main from   './mobile/main'

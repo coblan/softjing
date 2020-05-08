@@ -5,7 +5,7 @@ from helpers.func.html import textify,truncatehtml
 
 def get_right_side_panel():
     ls = [
-        {'editor':'com-ti-msg-panel','title':'双攻等是的','content':'<p>hello world</p>'},
+        {'editor':'com-ti-msg-panel','title':'关于我们','content':'<p>《成都竞嘉信息科技有限公司》，竭诚为您服务！</p>'},
         {'editor':'com-ti-list-one-page','title':'今日推荐','item_editor':'com-li-article-simple','director_name':'article.list','action':'location="article?pk="+scope.row.pk'},
     ]
     return ls

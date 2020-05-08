@@ -22,7 +22,7 @@ class ArticlePage(Home):
                 **ArticleTable().get_head_context(),
                  'table_editor': 'com-list-general',
                  'row_editor':'com-top-caption',
-                 'title':'资讯推荐',
+                 'title':'最新文章',
                  'footer':self.get_footer(2)
                  },
             

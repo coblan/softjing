@@ -15,3 +15,4 @@ from . pages import article
 from . mobile_pages import home as mobile_home
 from . mobile_pages import example as mobile_example
 from . mobile_pages import article as mobiel_article
+from . mobile_pages import contact as mobile_contact

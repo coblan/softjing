@@ -1,6 +1,7 @@
 from helpers.pcweb.shotcut import web_page_dc
 from webmain.models import Banner
 from helpers.maintenance.update_static_timestamp import static_url
+from webmain.mobile_pages.home import get_service_html
 
 class SoftJingHome(object):
     def __init__(self, request, engin):
@@ -31,7 +32,7 @@ class SoftJingHome(object):
                     #{'name':'4','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/HairyHighlanders_ZH-CN5546635143_1920x1080.jpg'},
                 #]
                  },
-                {'editor':'cus-our-service'},
+                {'editor':'cus-our-service',**get_service_html()},
                 
                 #{'editor':'com-top-block-ctn','title':'我们的服务','sub_title':'灵活多变,以人为本。',
                  #'items':[

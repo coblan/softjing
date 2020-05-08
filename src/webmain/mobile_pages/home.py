@@ -4,6 +4,20 @@ from helpers.director.kv import get_value
 from ..models import Banner
 from helpers.maintenance.update_static_timestamp import static_url
 
+def get_service_html():
+    return {
+        'about_us':''' <p >竞嘉主要由富有经验的全栈开发人员组成，我们拥有完全自主研发的开发框架，具备深度/灵活定制化系统的能力。我们的服务对象主要是中小型企业及部分个人用户。为客户提供精简和有针对性的专门化系统。
+
+            </p>
+            <p> 未来我们会陆续推出AI/机器学习方面的相关服务，例如企业数据透视图，信息提取与分析等。</p>''',
+        'admin_backend':'''  主要是采用浏览器(前端)+python(后端)的架构，为用户提供软件服务。传统的大公司开发的ERP,OA等管理软件功能繁杂，人员需要培训，使得普通用户比较抵触，而我们追求的是小巧，易用和几乎不需要培训的软件。根据用户的需求，富有针对性的定制化软件，砍掉那些用不到的功能，这就是我们存在的意义。
+''',
+        'h5':'''采用vue.js等流行的前端技术，进行模块化H5开发。拥有自主开发框架，能够快速开发公众号和web网站，成本低廉。''',
+        'after_content':'''   <p>
+                除了单独开发软件外。我们还积极的参与到软件外包服务中。如果您的项目需要专业的全栈开发技术，可以联系我们。我们除了拥有技术外，还有诚意。
+            </p>'''
+    }
+
 class Home(object):
     def __init__(self, request, engin):
         self.request =request
@@ -26,7 +40,7 @@ class Home(object):
              'editor_ctx':{
                  'layout_editors':[
                      {'editor':'com-top-swiper','items':banners,},
-                     {'editor':'cus-mb-our-service'},
+                     {'editor':'cus-mb-our-service',**get_service_html() },
                      
                     {'editor':'com-top-transparent-ctn',
                  'image_url':static_url('image/desert-4791919_1280.jpg'),
@@ -64,8 +78,10 @@ class Home(object):
             'active':index,
             'items':[
                 {'label':'首页','icon':'home-o','action':'location = "/mb/home" '},
-                {'label':'最新文章','icon':'description','action':'location = "/mb/article"'},
                 {'label':'演示实例','icon':'gem-o','action':'location = "/mb/example"'},
+                {'label':'最新文章','icon':'description','action':'location = "/mb/article"'},
+                {'label':'联系我们','icon':'phone-o','action':'location = "/mb/contact"'}
+              
             ]
         }
 

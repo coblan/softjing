@@ -13,6 +13,7 @@ class ExampleInfoPage(TablePage):
         exclude =[]
         pop_edit_fields=['id']
         
+        
 
 class ExampleForm(ModelFields):
     class Meta:

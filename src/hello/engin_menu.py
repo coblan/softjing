@@ -43,7 +43,7 @@ PcAdminMenu.add_pages(page_dc)
 class PcWebMenu(BaseEngine):
     url_name = 'SoftJing'
     title = 'SoftJing'
-    brand = '''  <img src="%s" onclick="location='/'" style="height:60px;width:auto"> ''' %static_url('image/logo.png') #'SoftJing'  #
+    brand = 'SoftJing' # '''  <img src="%s" onclick="location='/'" style="height:60px;width:auto"> ''' %static_url('image/logo.png') #'SoftJing'  #
     mini_brand = 'SoftJing'
     need_staff=False
     need_login=False
@@ -56,16 +56,26 @@ class PcWebMenu(BaseEngine):
             {'label': '首页', 'url': page('home'), 'visible': True},
             {'label': '最新文章','url':page('articlelist'),'icon': fa('fa-truck'), 'visible': True},
             {'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            {'label':'联系我们','action':'''
+                cfg.pop_vue_com('cus-contact',{wechat_qr:"%s"},{
+                title:false,
+                area: ['400px', '400px'],
+                shade: 0.8,
+                skin: 'img-shower',
+                shadeClose: true,
+            })
+            '''%static_url('image/zhang_wechat.jpg') },
             {'label':'后台管理','url':'/pc/admin_article','icon': fa('fa-truck'),'visible':True},
         ]
 
         return menu
+
     
     def custome_ctx(self, ctx):
         ctx.update({
             'extra_js':['webmain'],
             'navibar':{
-                'editor':'com-xiu-menu',
+                'editor':'com-xiu-menu','menu':ctx.get('menu')
             },
             'footer':{
                 #'editor':'com-ft-copyright','copyright':''

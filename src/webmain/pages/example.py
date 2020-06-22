@@ -16,7 +16,7 @@ class ExamplePage(object):
                  'full_width':True,
                  'image_url':static_url('image/server-2160321_1280.webp'),
                  'class':'my-top-image',
-                 'css':''' .my-top-image .head{height:180px}
+                 'css':''' .my-top-image .head{height:70px}
                            .my-top-image .head img{height:370px}
                            .my-top-image .content{margin-bottom:40px}''',  
                  'inn_editor':'com-example-content',

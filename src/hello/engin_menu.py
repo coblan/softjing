@@ -91,7 +91,8 @@ class PcWebMenu(BaseEngine):
             },
             'customize_meta':'''<meta name="keywords" content="互联网 软件 管理后台 公众号" />
 <meta name="description" content="竞嘉信息技术有限公司">
-<meta name="author" content="竞嘉信息技术有限公司">'''
+<meta name="author" content="竞嘉信息技术有限公司">''',
+            'init_express':'if(!ex.os.isPc){location="/mb/home"}'
         })
         return ctx
 

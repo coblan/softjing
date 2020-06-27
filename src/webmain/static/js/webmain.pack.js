@@ -122,6 +122,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n/
 
 /***/ }),
 
+/***/ "../../../../../../coblan/webcode/node_modules/babel-loader/lib/index.js?!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** D:/coblan/webcode/node_modules/babel-loader/lib??ref--1!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./mobile/content/image_text.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  props: ['ctx']\n});\n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?D:/coblan/webcode/node_modules/babel-loader/lib??ref--1!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
 /***/ "../../../../../../coblan/webcode/node_modules/babel-loader/lib/index.js?!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/our_service.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************!*\
   !*** D:/coblan/webcode/node_modules/babel-loader/lib??ref--1!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./mobile/our_service.vue?vue&type=script&lang=js& ***!
@@ -212,6 +224,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../../../cobla
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("exports = module.exports = __webpack_require__(/*! ../../../../../../../coblan/webcode/node_modules/css-loader/lib/css-base.js */ \"../../../../../../coblan/webcode/node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.i, \".cus-mb-contact[data-v-32cc8b41] {\\n  position: relative;\\n  height: calc(100vh - 80px);\\n  background-color: white;\\n  width: 100vw;\\n}\\n.cus-mb-contact .content[data-v-32cc8b41] {\\n    position: absolute;\\n    top: 50%;\\n    left: 50%;\\n    transform: translate(-50%, -50%);\\n    color: grey;\\n}\\n.cus-mb-contact .content .wechat img[data-v-32cc8b41] {\\n      width: 4rem;\\n      height: auto;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./mobile/contact.vue?D:/coblan/webcode/node_modules/css-loader!D:/coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!D:/coblan/webcode/node_modules/sass-loader/lib/loader.js!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../../../../../../coblan/webcode/node_modules/css-loader/index.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../coblan/webcode/node_modules/sass-loader/lib/loader.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** D:/coblan/webcode/node_modules/css-loader!D:/coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!D:/coblan/webcode/node_modules/sass-loader/lib/loader.js!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../../../../../coblan/webcode/node_modules/css-loader/lib/css-base.js */ \"../../../../../../coblan/webcode/node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.i, \".com-image-text[data-v-ad334054] {\\n  display: flex;\\n  padding: .2rem;\\n  border-top: 1px solid #ececec;\\n  margin: .3rem 0;\\n  align-items: center;\\n}\\n.icon[data-v-ad334054] {\\n  width: .6rem;\\n  height: auto;\\n  padding: .2rem;\\n  flex-shrink: 0;\\n}\\n.detail[data-v-ad334054] {\\n  flex-grow: 10;\\n  padding: .2rem;\\n}\\n.title[data-v-ad334054] {\\n  text-align: center;\\n  color: green;\\n  margin: .2rem;\\n}\\n.content[data-v-ad334054] {\\n  line-height: .4rem;\\n  font-size: .26rem;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?D:/coblan/webcode/node_modules/css-loader!D:/coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!D:/coblan/webcode/node_modules/sass-loader/lib/loader.js!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -325,6 +348,17 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 
 /***/ }),
 
+/***/ "../../../../../../coblan/webcode/node_modules/style-loader/index.js!../../../../../../coblan/webcode/node_modules/css-loader/index.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../coblan/webcode/node_modules/sass-loader/lib/loader.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** D:/coblan/webcode/node_modules/style-loader!D:/coblan/webcode/node_modules/css-loader!D:/coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!D:/coblan/webcode/node_modules/sass-loader/lib/loader.js!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = __webpack_require__(/*! !../../../../../../../../coblan/webcode/node_modules/css-loader!../../../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../../coblan/webcode/node_modules/sass-loader/lib/loader.js!../../../../../../../../coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss& */ \"../../../../../../coblan/webcode/node_modules/css-loader/index.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../coblan/webcode/node_modules/sass-loader/lib/loader.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss&\");\nif(typeof content === 'string') content = [[module.i, content, '']];\n// add the styles to the DOM\nvar update = __webpack_require__(/*! ../../../../../../../../coblan/webcode/node_modules/style-loader/addStyles.js */ \"../../../../../../coblan/webcode/node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(false) {}\n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?D:/coblan/webcode/node_modules/style-loader!D:/coblan/webcode/node_modules/css-loader!D:/coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!D:/coblan/webcode/node_modules/sass-loader/lib/loader.js!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
 /***/ "../../../../../../coblan/webcode/node_modules/style-loader/index.js!../../../../../../coblan/webcode/node_modules/css-loader/index.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../coblan/webcode/node_modules/sass-loader/lib/loader.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/our_service.vue?vue&type=style&index=0&id=5b8c2b3a&scoped=true&lang=scss&":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** D:/coblan/webcode/node_modules/style-loader!D:/coblan/webcode/node_modules/css-loader!D:/coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!D:/coblan/webcode/node_modules/sass-loader/lib/loader.js!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./mobile/our_service.vue?vue&type=style&index=0&id=5b8c2b3a&scoped=true&lang=scss& ***!
@@ -413,6 +447,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"cus-mb-contact\" }, [\n    _c(\"div\", { staticClass: \"content\" }, [\n      _c(\"div\", { staticClass: \"wechat\", staticStyle: { margin: \".2rem\" } }, [\n        _c(\"img\", { attrs: { src: _vm.ctx.wechat_qr, alt: \"\" } })\n      ]),\n      _vm._v(\" \"),\n      _c(\"div\", { staticStyle: { margin: \".2rem\", \"text-align\": \"center\" } }, [\n        _vm._v(\"扫码添加客服微信\")\n      ])\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./mobile/contact.vue?D:/coblan/webcode/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
+/***/ "../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/templateLoader.js?!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=template&id=ad334054&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** D:/coblan/webcode/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./mobile/content/image_text.vue?vue&type=template&id=ad334054&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"com-image-text\" }, [\n    _c(\"img\", { staticClass: \"icon\", attrs: { src: _vm.ctx.icon, alt: \"\" } }),\n    _vm._v(\" \"),\n    _c(\"div\", { staticClass: \"detail\" }, [\n      _c(\"div\", {\n        staticClass: \"title\",\n        domProps: { textContent: _vm._s(_vm.ctx.title) }\n      }),\n      _vm._v(\" \"),\n      _c(\"div\", {\n        staticClass: \"content\",\n        domProps: { innerHTML: _vm._s(_vm.ctx.content) }\n      })\n    ])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?D:/coblan/webcode/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!D:/coblan/webcode/node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -644,6 +690,66 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cob
 
 /***/ }),
 
+/***/ "./mobile/content/image_text.vue":
+/*!***************************************!*\
+  !*** ./mobile/content/image_text.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _image_text_vue_vue_type_template_id_ad334054_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./image_text.vue?vue&type=template&id=ad334054&scoped=true& */ \"./mobile/content/image_text.vue?vue&type=template&id=ad334054&scoped=true&\");\n/* harmony import */ var _image_text_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./image_text.vue?vue&type=script&lang=js& */ \"./mobile/content/image_text.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _image_text_vue_vue_type_style_index_0_id_ad334054_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss& */ \"./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss&\");\n/* harmony import */ var _coblan_webcode_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../../coblan/webcode/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"../../../../../../coblan/webcode/node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_coblan_webcode_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(\n  _image_text_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _image_text_vue_vue_type_template_id_ad334054_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _image_text_vue_vue_type_template_id_ad334054_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  \"ad334054\",\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"mobile/content/image_text.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?");
+
+/***/ }),
+
+/***/ "./mobile/content/image_text.vue?vue&type=script&lang=js&":
+/*!****************************************************************!*\
+  !*** ./mobile/content/image_text.vue?vue&type=script&lang=js& ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _coblan_webcode_node_modules_babel_loader_lib_index_js_ref_1_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../coblan/webcode/node_modules/babel-loader/lib??ref--1!../../../../../../../../coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./image_text.vue?vue&type=script&lang=js& */ \"../../../../../../coblan/webcode/node_modules/babel-loader/lib/index.js?!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_coblan_webcode_node_modules_babel_loader_lib_index_js_ref_1_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?");
+
+/***/ }),
+
+/***/ "./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss&":
+/*!*************************************************************************************************!*\
+  !*** ./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss& ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _coblan_webcode_node_modules_style_loader_index_js_coblan_webcode_node_modules_css_loader_index_js_coblan_webcode_node_modules_vue_loader_lib_loaders_stylePostLoader_js_coblan_webcode_node_modules_sass_loader_lib_loader_js_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_style_index_0_id_ad334054_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../coblan/webcode/node_modules/style-loader!../../../../../../../../coblan/webcode/node_modules/css-loader!../../../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../../coblan/webcode/node_modules/sass-loader/lib/loader.js!../../../../../../../../coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss& */ \"../../../../../../coblan/webcode/node_modules/style-loader/index.js!../../../../../../coblan/webcode/node_modules/css-loader/index.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../coblan/webcode/node_modules/sass-loader/lib/loader.js!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=style&index=0&id=ad334054&scoped=true&lang=scss&\");\n/* harmony import */ var _coblan_webcode_node_modules_style_loader_index_js_coblan_webcode_node_modules_css_loader_index_js_coblan_webcode_node_modules_vue_loader_lib_loaders_stylePostLoader_js_coblan_webcode_node_modules_sass_loader_lib_loader_js_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_style_index_0_id_ad334054_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_coblan_webcode_node_modules_style_loader_index_js_coblan_webcode_node_modules_css_loader_index_js_coblan_webcode_node_modules_vue_loader_lib_loaders_stylePostLoader_js_coblan_webcode_node_modules_sass_loader_lib_loader_js_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_style_index_0_id_ad334054_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _coblan_webcode_node_modules_style_loader_index_js_coblan_webcode_node_modules_css_loader_index_js_coblan_webcode_node_modules_vue_loader_lib_loaders_stylePostLoader_js_coblan_webcode_node_modules_sass_loader_lib_loader_js_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_style_index_0_id_ad334054_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _coblan_webcode_node_modules_style_loader_index_js_coblan_webcode_node_modules_css_loader_index_js_coblan_webcode_node_modules_vue_loader_lib_loaders_stylePostLoader_js_coblan_webcode_node_modules_sass_loader_lib_loader_js_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_style_index_0_id_ad334054_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_coblan_webcode_node_modules_style_loader_index_js_coblan_webcode_node_modules_css_loader_index_js_coblan_webcode_node_modules_vue_loader_lib_loaders_stylePostLoader_js_coblan_webcode_node_modules_sass_loader_lib_loader_js_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_style_index_0_id_ad334054_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?");
+
+/***/ }),
+
+/***/ "./mobile/content/image_text.vue?vue&type=template&id=ad334054&scoped=true&":
+/*!**********************************************************************************!*\
+  !*** ./mobile/content/image_text.vue?vue&type=template&id=ad334054&scoped=true& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _coblan_webcode_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_template_id_ad334054_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../../coblan/webcode/node_modules/vue-loader/lib??vue-loader-options!./image_text.vue?vue&type=template&id=ad334054&scoped=true& */ \"../../../../../../coblan/webcode/node_modules/vue-loader/lib/loaders/templateLoader.js?!../../../../../../coblan/webcode/node_modules/vue-loader/lib/index.js?!./mobile/content/image_text.vue?vue&type=template&id=ad334054&scoped=true&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _coblan_webcode_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_template_id_ad334054_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _coblan_webcode_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_coblan_webcode_node_modules_vue_loader_lib_index_js_vue_loader_options_image_text_vue_vue_type_template_id_ad334054_scoped_true___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./mobile/content/image_text.vue?");
+
+/***/ }),
+
+/***/ "./mobile/content/main.js":
+/*!********************************!*\
+  !*** ./mobile/content/main.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _image_text_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./image_text.vue */ \"./mobile/content/image_text.vue\");\n\nVue.component('com-image-text', _image_text_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./mobile/content/main.js?");
+
+/***/ }),
+
 /***/ "./mobile/main.js":
 /*!************************!*\
   !*** ./mobile/main.js ***!
@@ -652,7 +758,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cob
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _our_service_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./our_service.vue */ \"./mobile/our_service.vue\");\n/* harmony import */ var _contact_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.vue */ \"./mobile/contact.vue\");\n\n\nVue.component('cus-mb-our-service', _our_service_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nVue.component('cus-mb-contact', _contact_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n//# sourceURL=webpack:///./mobile/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _our_service_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./our_service.vue */ \"./mobile/our_service.vue\");\n/* harmony import */ var _contact_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.vue */ \"./mobile/contact.vue\");\n/* harmony import */ var _content_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content/main */ \"./mobile/content/main.js\");\n\n\nVue.component('cus-mb-our-service', _our_service_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\nVue.component('cus-mb-contact', _contact_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n\n//# sourceURL=webpack:///./mobile/main.js?");
 
 /***/ }),
 

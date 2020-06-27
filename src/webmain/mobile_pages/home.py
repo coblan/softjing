@@ -40,7 +40,42 @@ class Home(object):
              'editor_ctx':{
                  'layout_editors':[
                      {'editor':'com-top-swiper','items':banners,},
-                     {'editor':'cus-mb-our-service',**get_service_html() },
+                     #{'editor':'cus-mb-our-service',**get_service_html() },
+                     {'editor':'com-slot-wrap','inn_editor':'com-title-block',
+                      'title':'业务服务',
+                      'sub_title':'应用最新技术、高效灵活。',
+                      'slot':[
+                          #{'name':'content','editor':'com-top-html','ctx':{'html':'<h1>this is h1</h1>'} },
+                          {'name':'content','editors':[
+                              {'editor':'com-image-text',
+                               'ctx':{
+                                   'icon':static_url('image/管理.png'),
+                                  'title':'管理系统',
+                                  'content':'除ERP,CMS等传统管理系统，还能根据用户需求开发各种定制后台系统。采用高效语言与框架进行开发，除了保证效率外，还能提高系统稳定性'} },
+                              {'editor':'com-image-text',
+                               'ctx':{
+                                   'icon':static_url('image/微信公众号.png'),
+                                   'title':'微信/H5网站',
+                                   'content':'采用最新H5技术，制作移动页面(公众号)与pc网站开发。移动页面接近app的用户体验。'
+                                   } },
+                              {'editor':'com-image-text',
+                               'ctx':{
+                                   'icon':static_url('image/icon-rgb_机器学习算法引擎.png'),
+                                   'title':'数据分析',
+                                   'content':'各种数据渲染与呈现，普通数据分析，以及基于机器学习的信息挖掘等。'
+                                   } },
+                              ]},
+                      ],
+                      'css':'.red-title{color:red;}'
+                      },
+                     {'editor':'com-title-block',
+                      'title':'关于我们',
+                      'sub_title':'ABOUT US',
+                      'class':'about-us',
+                      'css':'.about-us{padding:.4rem 0;background-color:#EFEDED}',
+                      'html':'''<p>竞嘉主要由富有经验的全栈开发人员组成，我们拥有完全自主研发的开发框架，具备深度/灵活定制化系统的能力。我们的服务对象主要是中小型企业及部分个人用户。为客户提供精简和有针对性的专门化系统。</p>
+
+<p>未来我们会陆续推出AI/机器学习方面的相关服务，例如企业数据透视图，信息提取与分析等。</p>'''},
                      
                     {'editor':'com-top-transparent-ctn',
                  'image_url':static_url('image/desert-4791919_1280.jpg'),
@@ -65,6 +100,7 @@ class Home(object):
                       'class':'white-bg material-wave',
                       'title':'服务项目',
                       'sub_title':'管理系统开发,数据爬取、挖掘分析,公众号与小程序等。'},
+                     
                      
                     #{'editor':'com-top-html','html':get_value('cfg.home_html','')},
                     

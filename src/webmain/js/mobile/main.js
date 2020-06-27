@@ -3,3 +3,5 @@ import live_mb_contact from  './contact.vue'
 
 Vue.component('cus-mb-our-service',our_service)
 Vue.component('cus-mb-contact',live_mb_contact)
+
+import content_main from './content/main'

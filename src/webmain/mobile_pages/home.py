@@ -48,22 +48,20 @@ class Home(object):
                           #{'name':'content','editor':'com-top-html','ctx':{'html':'<h1>this is h1</h1>'} },
                           {'name':'content','editors':[
                               {'editor':'com-image-text',
-                               'ctx':{
-                                   'icon':static_url('image/管理.png'),
-                                  'title':'管理系统',
-                                  'content':'除ERP,CMS等传统管理系统，还能根据用户需求开发各种定制后台系统。采用高效语言与框架进行开发，除了保证效率外，还能提高系统稳定性'} },
+                                'icon':static_url('image/管理.png'),
+                                'title':'管理系统',
+                                'content':'除ERP,CMS等传统管理系统，还能根据用户需求开发各种定制后台系统。采用高效语言与框架进行开发，除了保证效率外，还能提高系统稳定性' 
+                               },
                               {'editor':'com-image-text',
-                               'ctx':{
-                                   'icon':static_url('image/微信公众号.png'),
-                                   'title':'微信/H5网站',
-                                   'content':'采用最新H5技术，制作移动页面(公众号)与pc网站开发。移动页面接近app的用户体验。'
-                                   } },
+                                'icon':static_url('image/微信公众号.png'),
+                                'title':'微信/H5网站',
+                                'content':'采用最新H5技术，制作移动页面(公众号)与pc网站开发。移动页面接近app的用户体验。'
+                                   },
                               {'editor':'com-image-text',
-                               'ctx':{
-                                   'icon':static_url('image/icon-rgb_机器学习算法引擎.png'),
-                                   'title':'数据分析',
-                                   'content':'各种数据渲染与呈现，普通数据分析，以及基于机器学习的信息挖掘等。'
-                                   } },
+                                'icon':static_url('image/icon-rgb_机器学习算法引擎.png'),
+                                'title':'数据分析',
+                                'content':'各种数据渲染与呈现，普通数据分析，以及基于机器学习的信息挖掘等。'
+                                   },
                               ]},
                       ],
                       'css':'.red-title{color:red;}'

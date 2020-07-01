@@ -87,6 +87,7 @@
 .title{
     font-weight: bold;
     font-size: 24px;
+    text-align: center;
 }
 .mobile{
     display: flex;

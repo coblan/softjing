@@ -24,7 +24,7 @@ class PcAdminMenu(BaseEngine):
     def menu(self):
         crt_user = self.request.user
         menu = [
-        
+            {'label':'首页','url':page('enginhome')},
             {'label':'内容管理','icon': fa('fa-truck'),'submenu':[
                  {'label': '文章管理', 'url': page('admin_article'), },
                  {'label':'首页广告图','url':page('banner'),},
@@ -65,7 +65,7 @@ class PcWebMenu(BaseEngine):
                 shadeClose: true,
             })
             '''%static_url('image/zhang_wechat.jpg') },
-            {'label':'后台管理','url':'/pc/admin_article','icon': fa('fa-truck'),'visible':True},
+            {'label':'管理','url':'/pc/enginhome','icon': fa('fa-truck'),'visible':True},
         ]
 
         return menu

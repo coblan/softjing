@@ -12,35 +12,31 @@ class ExamplePage(object):
     def get_context(self):
         return {
             'tops':[
-                {'editor':'com-top-image-top-pad',
+                #{'editor':'com-top-image-top-pad',
+                 #'full_width':True,
+                 #'image_url':static_url('image/server-2160321_1280.webp'),
+                 #'class':'my-top-image',
+                 #'css':''' .my-top-image .head{height:70px}
+                           #.my-top-image .head img{height:370px}
+                           #.my-top-image .content{margin-bottom:40px}''',  
+                 #'inn_editor':'com-example-content',
+                
+                 #},
+                {
+                    'editor':'com-slot-wrap',
+                    'inn_editor':'com-top-image-top-pad',
+                    'slot':[
+                        {'name':'content','editor':'com-example-content',},
+                        ],
                  'full_width':True,
                  'image_url':static_url('image/server-2160321_1280.webp'),
                  'class':'my-top-image',
                  'css':''' .my-top-image .head{height:70px}
                            .my-top-image .head img{height:370px}
-                           .my-top-image .content{margin-bottom:40px}''',  
-                 'inn_editor':'com-example-content',
-                 #'inn_editor':'com-ctn-tab',
-                 #'inn_ctx':{
-                     #'tabs':[
-                         #{'label':'综合系统','icon':static_url('image/综合数据.png'),'icon_active':static_url('image/综合数据_active.png'),
-                          #'editor':'com-example-info',
-                          #'director_name':'example-list',
-                          #'preset':'rt={kind:1}',
-                          #},
-                         #{'label':'管理系统',
-                          #'icon':static_url('image/系统.png'),'icon_active':static_url('image/系统_active.png'),
-                          #'editor':'com-example-info',
-                          #'director_name':'example-list',
-                           #'preset':'rt={kind:2}',},
-                        #{'label':'移动系统',
-                          #'icon':static_url('image/移动端.png'),'icon_active':static_url('image/移动端_active.png'),
-                          #'editor':'com-example-info',
-                          #'director_name':'example-list',
-                           #'preset':'rt={kind:3}',},
-                         #{'label':'数据分析','icon':static_url('image/数据.png'),'icon_active':static_url('image/数据_active.png')},
-                     #]
-                 #}
+                           .my-top-image .content{margin-bottom:40px}
+                           ''',  
+                 #'inn_editor':'com-example-content',
+                
                  },
                 
             ]

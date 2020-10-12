@@ -33,7 +33,8 @@ class SoftJingHome(object):
                 #]
                  },
                 {'editor':'com-service','items':[
-                    {'cover':static_url('image/管理.png'),'title':'管理系统',
+                    {'cover':static_url('image/管理.png'),
+                     'title':'管理系统',
                      'content':'除ERP,CMS等传统管理系统，还能根据用户需求开发各种定制后台系统。采用高效语言与框架进行开发，除了保证效率外，还能提高系统稳定性'},
                     {'cover':static_url('image/微信公众号.png'),'title':'微信/H5网站',
                      'content':'采用最新H5技术，制作移动页面(公众号)与pc网站开发。移动页面接近app的用户体验。'}, 

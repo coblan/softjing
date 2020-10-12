@@ -32,6 +32,7 @@ urlpatterns = [
     
     url(r'^d/',include('helpers.director.urls'),name='director'),
     url(r'^dapi/(?P<director_name>[\w\/\.-]+)?/?$',director_view),
+    url(r'^pc',RedirectView.as_view(url='/pc/enginhome')) ,
     url(r'^$',RedirectView.as_view(url='/web/home')) ,
 ]
 

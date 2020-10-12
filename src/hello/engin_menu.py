@@ -65,7 +65,7 @@ class PcWebMenu(BaseEngine):
                 shadeClose: true,
             })
             '''%static_url('image/zhang_wechat.jpg') },
-            {'label':'管理','url':'/pc/enginhome','icon': fa('fa-truck'),'visible':True},
+            #{'label':'管理','url':'/pc/enginhome','icon': fa('fa-truck'),'visible':True},
         ]
 
         return menu
@@ -81,9 +81,10 @@ class PcWebMenu(BaseEngine):
                 #'editor':'com-ft-copyright','copyright':''
                 'class':'myfooter',
                 'css':'.myfooter{background-color:white;padding:20px;} .myfooter a{text-decoration: none;}',
-                'editor':'com-top-html','html':'''
+                'editor':'com-top-html',
+                'html':'''
                 <div style="text-align:center;">
-                  <div>@copyright 2019 SoftJing Infomaion Technology Co</div>
+                  <div>@copyright 2020 SoftJing Infomaion Technology Co</div>
                   <div><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">蜀ICP备19023278号-1</a></div>
                 </div>
               

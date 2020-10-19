@@ -55,7 +55,8 @@ class PcWebMenu(BaseEngine):
         
             {'label': '首页', 'url': page('home'), 'visible': True},
             {'label': '最新文章','url':page('articlelist'),'icon': fa('fa-truck'), 'visible': True},
-            {'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            #{'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            {'label': '管理后台','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
             {'label':'联系我们','action':'''
                 cfg.pop_vue_com('cus-contact',{wechat_qr:"%s"},{
                 title:false,

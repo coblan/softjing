@@ -10,7 +10,7 @@ class SoftJingHome(object):
         return 'pcweb/pcweb.html'
     
     def get_label(self):
-        return '竞嘉'
+        return '成都竞嘉信息科技有限公司'
     
     def get_context(self):
         banners = []

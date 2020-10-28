@@ -9,6 +9,9 @@ class ExamplePage(object):
     def get_template(self):
         return 'pcweb/pcweb.html'
     
+    def get_label(self):
+        return '案例|竞嘉'
+    
     def get_context(self):
         return {
             'tops':[

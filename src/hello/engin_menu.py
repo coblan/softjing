@@ -55,8 +55,8 @@ class PcWebMenu(BaseEngine):
         
             {'label': '首页', 'url': page('home'), 'visible': True},
             {'label': '最新文章','url':page('articlelist'),'icon': fa('fa-truck'), 'visible': True},
-            #{'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
-            {'label': '管理后台','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            {'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            #{'label': '管理后台','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
             {'label':'联系我们','action':'''
                 cfg.pop_vue_com('cus-contact',{wechat_qr:"%s"},{
                 title:false,
@@ -74,6 +74,8 @@ class PcWebMenu(BaseEngine):
     
     def custome_ctx(self, ctx):
         ctx.update({
+            'extra_head':'''<meta name="keywords" content="后台开发,管理后台,公众号,网站,ERP,OA,CRM,APP后台">
+            <meta name="description" content="成都竞嘉信息科技有限公司是一家注重效率的公司，以完成客户灵活的需求为己任。主要业务包括各种管理后台开发，包括ERP,OA,CRM等类型管理系统以及app后台等。">''',
             'extra_js':['webmain'],
             'navibar':{
                 'editor':'com-xiu-menu','menu':ctx.get('menu')

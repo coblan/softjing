@@ -22,7 +22,7 @@ class SoftJingHome(object):
                 'image_url':banner.cover,
             }
             if banner.link:
-                dc['click_express']= "location='%s'"%bank.link
+                dc['click_express']= "location='%s'"%banner.link
             banners.append(dc)
 
         return {

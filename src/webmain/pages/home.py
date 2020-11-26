@@ -15,13 +15,16 @@ class SoftJingHome(object):
     def get_context(self):
         banners = []
         for banner in Banner.objects.filter(status=1).order_by('order'):
-            banners.append({
+            dc = {
                 'name':banner.pk,
                 'label':banner.title,
                 'editor':'com-swiper-image',
                 'image_url':banner.cover,
-            })
-        
+            }
+            if banner.link:
+                dc['click_express']= "location='%s'"%bank.link
+            banners.append(dc)
+
         return {
             'tops':[
                 {'editor':'com-top-swiper-fade',

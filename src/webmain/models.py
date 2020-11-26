@@ -27,6 +27,7 @@ class Banner(models.Model):
     cover = PictureField('封面',max_length=300)
     status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
     order = models.IntegerField(verbose_name='排序',default=0)
+    link = models.CharField('连接',max_length=200,blank=True)
 
 EXAMPLE_KIND= (
     (1,'综合系统'),

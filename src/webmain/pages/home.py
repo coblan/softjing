@@ -14,7 +14,7 @@ class SoftJingHome(object):
     
     def get_context(self):
         banners = []
-        for banner in Banner.objects.all():
+        for banner in Banner.objects.filter(status=1).order_by('order'):
             banners.append({
                 'name':banner.pk,
                 'label':banner.title,
@@ -24,7 +24,11 @@ class SoftJingHome(object):
         
         return {
             'tops':[
-                {'editor':'com-top-swiper-fade','items': banners
+                {'editor':'com-top-swiper-fade',
+                 'items': banners,
+                 'class':'bigbanner',
+                 'css':'.bigbanner{height:45rem}',
+                 
                  #[ 
                     #{'name':'1','label':'犀牛','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/RhinosOxpecker_ZH-CN6392794613_1920x1080.jpg'},
                     #{'name':'2','label':'鸟类','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/PuffinSharing_ZH-CN6330890743_1920x1080.jpg'},
@@ -32,7 +36,7 @@ class SoftJingHome(object):
                     #{'name':'4','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/HairyHighlanders_ZH-CN5546635143_1920x1080.jpg'},
                 #]
                  },
-                {'editor':'com-service','items':[
+                {'editor':'our-service','items':[
                     {'cover':static_url('image/管理.png'),
                      'title':'管理系统',
                      'content':'除ERP,CMS等传统管理系统，还能根据用户需求开发各种定制后台系统。采用高效语言与框架进行开发，除了保证效率外，还能提高系统稳定性'},

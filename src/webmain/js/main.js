@@ -8,7 +8,7 @@ Vue.component('com-example-info',example_info)
 Vue.component('cus-our-service',our_service)
 Vue.component('cus-contact',contact)
 Vue.component('com-example-content' ,example_content)
-Vue.component('com-service',com_service)
+Vue.component('our-service',com_service)
 
 import * as mb_main from   './mobile/main'
 

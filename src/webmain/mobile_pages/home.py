@@ -27,7 +27,7 @@ class Home(object):
     
     def get_context(self):
         banners = []
-        for banner in Banner.objects.all():
+        for banner in Banner.objects.filter(status=1).order_by('order'):
             banners.append({
                 'name':banner.pk,
                 'label':banner.title,

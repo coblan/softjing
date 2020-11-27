@@ -77,6 +77,7 @@ class PcWebMenu(BaseEngine):
             'extra_head':'''<meta name="keywords" content="后台开发,管理后台,公众号,网站,ERP,OA,CRM,APP后台">
             <meta name="description" content="成都竞嘉信息科技有限公司是一家注重效率的公司，以完成客户灵活的需求为己任。主要业务包括各种管理后台开发，包括ERP,OA,CRM等类型管理系统以及app后台等。">''',
             'extra_js':['webmain'],
+            'seo_url':ctx.get('menu'),
             'navibar':{
                 'editor':'com-xiu-menu','menu':ctx.get('menu')
             },

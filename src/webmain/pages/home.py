@@ -22,13 +22,15 @@ class SoftJingHome(object):
                 'image_url':banner.cover,
             }
             if banner.link:
-                dc['click_express']= "location='%s'"%banner.link
+                #dc['click_express']= "location='%s'"%banner.link
+                dc['link_express']= "rt='%s'"%banner.link
             banners.append(dc)
 
         return {
             'tops':[
                 {'editor':'com-top-swiper-fade',
                  'items': banners,
+                 'delay':10000,
                  'class':'bigbanner',
                  'css':'.bigbanner{height:45rem}',
                  

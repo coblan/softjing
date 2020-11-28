@@ -34,8 +34,12 @@ class ArticleListPage(object):
                     'editor':'com-ti-list',
                      'director_name':'article.list',
                      'on_mounted':'rootParStore.$on("change-kind",(event)=>{scope.vc.ctx.preset=event;scope.vc.get_rows()})',
-                     'item_editor':'com-li-article',
-                     'action':'location="article?pk="+scope.row.pk'}
+                     'item_ctx':{
+                         'editor':'com-li-article',
+                          'link_express':'rt="article?pk="+scope.vc.row.pk',
+                     }
+                     #'action':'location="article?pk="+scope.row.pk'
+                    }
                     ],
                  'small_items':get_right_side_panel()},
             ]
@@ -56,7 +60,8 @@ class ArticleList(ModelTable):
     
     def dict_row(self, inst):
         return {
-            'sub_title': textify(  truncatehtml( inst.content,90 ) )
+            'sub_title': textify(  truncatehtml( inst.content,90 ) ),
+            
         }
 
 class ArticlePage(FieldsPage):

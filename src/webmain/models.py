@@ -20,6 +20,7 @@ class Article(models.Model):
     cover = PictureField('封面',max_length=300,blank=True)
     status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
     kind = models.IntegerField(verbose_name='类别',default=0,choices=ARTICLE_KIND)
+    order = models.IntegerField(verbose_name='排序',default=0)
     
 
 class Banner(models.Model):

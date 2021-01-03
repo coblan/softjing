@@ -2,6 +2,7 @@ from helpers.pcweb.shotcut import web_page_dc
 from helpers.maintenance.update_static_timestamp import static_url
 from helpers.director.shortcut import ModelTable,director
 from webmain.models import ExampleInfo
+from helpers.director.kv import get_value
 
 class ExamplePage(object):
     def __init__(self, request, engin):
@@ -15,6 +16,10 @@ class ExamplePage(object):
     def get_context(self):
         return {
             'tops':[
+                {'editor':'com-top-html',
+                 'class':'myhtml',
+                 'css':'.myhtml{width:800px;margin:auto} body{background:white;}',
+                 'html':get_value('cfg.example_html','')},
                 #{'editor':'com-top-image-top-pad',
                  #'full_width':True,
                  #'image_url':static_url('image/server-2160321_1280.webp'),
@@ -25,22 +30,22 @@ class ExamplePage(object):
                  #'inn_editor':'com-example-content',
                 
                  #},
-                {
-                    'editor':'com-slot-wrap',
-                    'inn_editor':'com-top-image-top-pad',
-                    'slot':[
-                        {'name':'content','editor':'com-example-content',},
-                        ],
-                 'full_width':True,
-                 'image_url':static_url('image/server-2160321_1280.webp'),
-                 'class':'my-top-image',
-                 'css':''' .my-top-image .head{height:70px}
-                           .my-top-image .head img{height:370px}
-                           .my-top-image .content{margin-bottom:40px}
-                           ''',  
-                 #'inn_editor':'com-example-content',
+                #{
+                    #'editor':'com-slot-wrap',
+                    #'inn_editor':'com-top-image-top-pad',
+                    #'slot':[
+                        #{'name':'content','editor':'com-example-content',},
+                        #],
+                 #'full_width':True,
+                 #'image_url':static_url('image/server-2160321_1280.webp'),
+                 #'class':'my-top-image',
+                 #'css':''' .my-top-image .head{height:70px}
+                           #.my-top-image .head img{height:370px}
+                           #.my-top-image .content{margin-bottom:40px}
+                           #''',  
+                 ##'inn_editor':'com-example-content',
                 
-                 },
+                 #},
                 
             ]
         }

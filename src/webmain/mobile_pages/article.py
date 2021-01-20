@@ -38,7 +38,8 @@ class ArticleTable(ModelTableMobile):
         return {
             'image_url':inst.cover,
             'sub_title': textify ( truncatehtml(inst.content,length=30) ),
-             'action':'live_root.open_live("live_html",{"content":scope.head.content,"title":scope.head.title})'
+             #'action':'live_root.open_live("live_html",{"content":scope.head.content,"title":scope.head.title})'
+             'action':'live_root.open_fade("live_html",{"content":scope.head.content,"title":scope.head.title})'
         }
 
 director.update({

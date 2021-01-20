@@ -32,7 +32,7 @@ class SoftJingHome(object):
                  'items': banners,
                  'delay':10000,
                  'class':'bigbanner',
-                 'css':'.bigbanner{height:45rem}',
+                 'css':'.bigbanner{height:450px}',
                  
                  #[ 
                     #{'name':'1','label':'犀牛','editor':'com-swiper-image','image_url':'http://h1.ioliu.cn/bing/RhinosOxpecker_ZH-CN6392794613_1920x1080.jpg'},

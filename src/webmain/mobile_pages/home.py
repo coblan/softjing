@@ -39,7 +39,7 @@ class Home(object):
             'editor':'live_layout',
              'editor_ctx':{
                  'layout_editors':[
-                     {'editor':'com-top-swiper','items':banners,},
+                     {'editor':'com-top-swiper','items':banners,'class':"softjing-swiper",'css':'.softjing-swiper .img-container{height:4rem;}'},
                      #{'editor':'cus-mb-our-service',**get_service_html() },
                      {'editor':'com-slot-wrap','inn_editor':'com-title-block',
                       'title':'业务服务',
@@ -113,7 +113,7 @@ class Home(object):
             'items':[
                 {'label':'首页','icon':'home-o','action':'location = "/mb/home" '},
                 {'label':'演示实例','icon':'gem-o','action':'location = "/mb/example"'},
-                {'label':'最新文章','icon':'description','action':'location = "/mb/article"'},
+                {'label':'专栏文章','icon':'description','action':'location = "/mb/article"'},
                 {'label':'联系我们','icon':'phone-o','action':'location = "/mb/contact"'}
               
             ]

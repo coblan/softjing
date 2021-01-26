@@ -14,7 +14,7 @@
                 <div class="item" v-for="item in items">
                     <img :src="item.cover" alt="">
                     <div class="item-title" v-text="item.title"></div>
-                    <div v-text="item.content"></div>
+                    <div class='html' v-html="item.content"></div>
                 </div>
 
             </div>
@@ -54,6 +54,9 @@
         text-align: center;
         padding: 20px;
         width: 300px;
+        .html{
+            text-align: left;
+        }
     }
     .com-service{
         padding-top: 50px;

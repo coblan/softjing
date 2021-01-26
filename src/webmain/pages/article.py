@@ -18,7 +18,7 @@ class ArticleListPage(object):
         return 'pcweb/pcweb.html'
     
     def get_label(self):
-        return '最新文章|竞嘉'
+        return '专栏文章'
     
     def get_context(self):
         return {

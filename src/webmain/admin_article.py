@@ -1,4 +1,4 @@
-from helpers.director.shortcut import TablePage,ModelTable,ModelFields,page_dc,director
+from helpers.director.shortcut import TablePage,ModelTable,ModelFields,page_dc,director,RowSort
 
 from .models import Article
 
@@ -10,9 +10,15 @@ class ArticlePage(TablePage):
         return 'jb_admin/table.html'
     
     class tableCls(ModelTable):
+        
         model = Article
         exclude =[]
         pop_edit_fields=['id']
+        
+        class sort(RowSort):
+            general_sort= 'order'
+            names = ['order']
+        
 
 class ArticleForm(ModelFields):
     class Meta:

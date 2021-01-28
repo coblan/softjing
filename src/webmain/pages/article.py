@@ -55,7 +55,7 @@ class ArticleList(ModelTable):
     def inn_filter(self, query):
         query = query.order_by('order')
         if self.kw.get('kind'):
-            return query.filter(kind = self.kw.get('kind'))
+            return query.filter(kind = self.kw.get('kind'),status=1)
         else:
             return query
     

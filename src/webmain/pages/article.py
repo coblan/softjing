@@ -53,9 +53,9 @@ class ArticleList(ModelTable):
     simple_dict = True
     
     def inn_filter(self, query):
-        query = query.order_by('order')
+        query = query.filter(status=1).order_by('order')
         if self.kw.get('kind'):
-            return query.filter(kind = self.kw.get('kind'),status=1)
+            return query.filter(kind = self.kw.get('kind'))
         else:
             return query
     

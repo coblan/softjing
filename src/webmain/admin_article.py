@@ -16,7 +16,6 @@ class ArticlePage(TablePage):
         pop_edit_fields=['id']
         
         class sort(RowSort):
-            general_sort= 'order'
             names = ['order']
         
 

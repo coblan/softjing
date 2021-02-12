@@ -55,7 +55,9 @@ class PcWebMenu(BaseEngine):
         
             {'label': '首页', 'url': page('home'), 'visible': True},
             {'label': '专栏文章','url':page('articlelist'),'icon': fa('fa-truck'), 'visible': True},
-            {'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            #{'label': '演示实例','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
+            {'label': '演示实例','url':page('sample'),'icon': fa('fa-truck'), 'visible': True},
+            
             #{'label': '管理后台','url':page('example'),'icon': fa('fa-truck'), 'visible': True},
             {'label':'联系我们','action':'''
                 cfg.pop_vue_com('cus-contact',{wechat_qr:"%s"},{
@@ -84,7 +86,7 @@ class PcWebMenu(BaseEngine):
             'footer':{
                 #'editor':'com-ft-copyright','copyright':''
                 'class':'myfooter',
-                'css':'.myfooter{background-color:white;padding:20px;} .myfooter a{text-decoration: none;}',
+                'css':'.myfooter{background-color:#f6f5f5;padding:40px;} .myfooter a{text-decoration: none;color:black;}',
                 'editor':'com-top-html',
                 'html':'''
                 <div style="text-align:center;">

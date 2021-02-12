@@ -12,6 +12,7 @@ ARTICLE_KIND = (
     (0,'不分类'),
     (1,'管理系统'),
     (2,'算法类'),
+    (3,'演示样例')
 )
 
 class Article(models.Model):

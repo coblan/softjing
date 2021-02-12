@@ -10,6 +10,7 @@ from . import admin_exampleinfo
 
 from . pages import home
 from . pages import example
+from . pages import example2
 from . pages import article
 
 from . mobile_pages import home as mobile_home

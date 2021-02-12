@@ -19,31 +19,40 @@ class ArticleListPage(object):
     
     def get_label(self):
         return '专栏文章'
+    article_kind = 0
     
     def get_context(self):
         return {
             'tops':[
-                {'editor':'com-top-action-bar','actions':[
-                    {'label':'全部','action':'rootParStore.$emit("change-kind",{})'},
-                    {'label':'管理系统','action':'rootParStore.$emit("change-kind",{kind:1})'},
-                    {'label':'算法','action':'rootParStore.$emit("change-kind",{kind:2})'}
+                {'editor':'com-top-action-bar',
+                 'mounted_express':'ex.each(scope.head.actions,item=>{if(item.status==%s){scope.vc.crt_label=item.label}})'%self.article_kind,
+                 'actions':[
+                    {'label':'全部','action':'rootParStore.$emit("change-kind",{})','status':0},
+                    {'label':'管理系统','action':'rootParStore.$emit("change-kind",{kind:1})','status':1},
+                    {'label':'算法','action':'rootParStore.$emit("change-kind",{kind:2})','status':2},
+                    {'label':'演示样例','action':'rootParStore.$emit("change-kind",{kind:3})','status':3}
                     ]},
                 {'editor':'com-top-lay-main-small',
                  'main_items':[
                     {
                     'editor':'com-ti-list',
                      'director_name':'article.list',
-                     'on_mounted':'rootParStore.$on("change-kind",(event)=>{scope.vc.ctx.preset=event;scope.vc.get_rows()})',
+                     'mounted_express':'scope.vc.rows=scope.head.table_ctx.rows;scope.vc.row_pages=scope.head.table_ctx.row_pages;scope.vc.ctx.preset=%s;rootParStore.$on("change-kind",(event)=>{scope.vc.ctx.preset=event;scope.vc.get_rows()})'%self.article_kind,
                      'item_ctx':{
                          'editor':'com-li-article',
                           'link_express':'rt="article?pk="+scope.vc.row.pk',
-                     }
+                     },
+                     'table_ctx':self.get_article_rows()
                      #'action':'location="article?pk="+scope.row.pk'
                     }
                     ],
                  'small_items':get_right_side_panel()},
             ]
         }
+    
+    def get_article_rows(self):
+        return ArticleList(kind=self.article_kind).get_data_context()
+    
 
 @director_element('article.list')
 class ArticleList(ModelTable):

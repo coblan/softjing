@@ -1,6 +1,7 @@
 from django.db import models
 from helpers.director.model_func.cus_fields.cus_picture import PictureField
 from helpers.director.model_func.cus_fields.richtext import RichtextField
+from helpers.director.model_func.cus_fields.multichoice import MultiChoiceField
 # Create your models here.
 
 ARTICLE_STATUS=(
@@ -15,13 +16,19 @@ ARTICLE_KIND = (
     (3,'演示样例')
 )
 
+ARTICLE_TAG = (
+    ('admin','管理系统'),
+    ('algo','算法'),
+    ('example','演示样例')
+)
 class Article(models.Model):
     title = models.CharField('标题',max_length=500)
     content = RichtextField('内容')
     cover = PictureField('封面',max_length=300,blank=True)
     status = models.IntegerField(verbose_name='在线',default=0,choices=ARTICLE_STATUS)
-    kind = models.IntegerField(verbose_name='类别',default=0,choices=ARTICLE_KIND)
+    #kind = models.IntegerField(verbose_name='类别',default=0,choices=ARTICLE_KIND)
     order = models.IntegerField(verbose_name='排序',default=0)
+    tag = MultiChoiceField('标签',max_length=300,choices = ARTICLE_TAG,blank=True)
     
 
 class Banner(models.Model):

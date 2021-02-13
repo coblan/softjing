@@ -19,25 +19,25 @@ class ArticleListPage(object):
     
     def get_label(self):
         return '公司资讯'
-    article_kind = 0
+    article_tag = ''
     
     def get_context(self):
         return {
             'tops':[
                 {'editor':'com-top-action-bar',
-                 'mounted_express':'ex.each(scope.head.actions,item=>{if(item.status==%s){scope.vc.crt_label=item.label}})'%self.article_kind,
+                 'mounted_express':'ex.each(scope.head.actions,item=>{if(item.tag=="%s"){scope.vc.crt_label=item.label}})'%self.article_tag,
                  'actions':[
-                    {'label':'全部','action':'rootParStore.$emit("change-kind",{})','status':0},
-                    {'label':'管理系统','action':'rootParStore.$emit("change-kind",{kind:1})','status':1},
-                    {'label':'算法','action':'rootParStore.$emit("change-kind",{kind:2})','status':2},
-                    {'label':'演示样例','action':'rootParStore.$emit("change-kind",{kind:3})','status':3}
+                    {'label':'全部','action':'rootParStore.$emit("change-kind",{})','tag':''},
+                    {'label':'管理系统','action':'rootParStore.$emit("change-kind",{tag:"admin"})','tag':1},
+                    {'label':'算法','action':'rootParStore.$emit("change-kind",{tag:"algo"})','tag':2},
+                    {'label':'演示样例','action':'rootParStore.$emit("change-kind",{tag:"example"})','tag':"example"}
                     ]},
                 {'editor':'com-top-lay-main-small',
                  'main_items':[
                     {
                     'editor':'com-ti-list',
                      'director_name':'article.list',
-                     'mounted_express':'scope.vc.rows=scope.head.table_ctx.rows;scope.vc.row_pages=scope.head.table_ctx.row_pages;scope.vc.ctx.preset=%s;rootParStore.$on("change-kind",(event)=>{scope.vc.ctx.preset=event;scope.vc.get_rows()})'%self.article_kind,
+                     'mounted_express':'scope.vc.rows=scope.head.table_ctx.rows;scope.vc.row_pages=scope.head.table_ctx.row_pages;scope.vc.ctx.preset="%s";rootParStore.$on("change-kind",(event)=>{scope.vc.ctx.preset=event;scope.vc.get_rows()})'%self.article_tag,
                      'item_ctx':{
                          'editor':'com-li-article',
                           'link_express':'rt="article?pk="+scope.vc.row.pk',
@@ -51,7 +51,7 @@ class ArticleListPage(object):
         }
     
     def get_article_rows(self):
-        return ArticleList(kind=self.article_kind).get_data_context()
+        return ArticleList(tag=self.article_tag).get_data_context()
     
 
 @director_element('article.list')
@@ -63,8 +63,9 @@ class ArticleList(ModelTable):
     
     def inn_filter(self, query):
         query = query.filter(status=1).order_by('order')
-        if self.kw.get('kind'):
-            return query.filter(kind = self.kw.get('kind'))
+        if self.kw.get('tag'):
+            #return query.filter(kind = self.kw.get('kind'))
+            return query.filter(tag__contains = self.kw.get('tag'))
         else:
             return query
     

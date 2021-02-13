@@ -8,7 +8,7 @@ class Example2Page(ArticleListPage):
     def get_label(self):
         return '样例'
     
-    article_kind = 3
+    article_tag = "example"
     
 
 

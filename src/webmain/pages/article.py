@@ -18,7 +18,7 @@ class ArticleListPage(object):
         return 'pcweb/pcweb.html'
     
     def get_label(self):
-        return '专栏文章'
+        return '公司资讯'
     article_kind = 0
     
     def get_context(self):
@@ -79,11 +79,14 @@ class ArticlePage(FieldsPage):
         return 'pcweb/pcweb.html'
     
     def get_context(self):
+        row = self.fields.get_row()
         ctx = {
             'tops':[
                 {'editor':'com-top-lay-main-small',
+                 
                  'main_items':[
-                     {'editor':'com-ti-article','row':self.fields.get_row()}
+                     {'editor':'com-ti-article','row':row,
+                      'mounted_express':'document.title= "%s"'%row.get('title'),}
                  ],
                  'small_items':get_right_side_panel()
                 }
